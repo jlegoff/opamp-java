@@ -1,0 +1,1 @@
+description = "OpenTelemetry Opamp Protobufs"
