@@ -9,10 +9,18 @@
 
 rootProject.name = "opamp-java"
 
+dependencyResolutionManagement {
+  repositories {
+    mavenCentral()
+    mavenLocal()
+  }
+}
+
 pluginManagement {
   plugins {
     id("com.google.protobuf") version "0.8.17"
   }
 }
 
-include("proto")
+include(":proto")
+include(":client")
