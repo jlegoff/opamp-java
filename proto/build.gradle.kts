@@ -1,7 +1,20 @@
 description = "OpenTelemetry Opamp Protobufs"
 
 plugins {
-    id("otel.java-conventions")
+    `java-library`
+}
+
+tasks {
+    withType<JavaCompile>().configureEach {
+        with(options) {
+            release.set(8)
+
+            //disable deprecation warnings for the protobuf module
+            compilerArgs.add("-Xlint:-deprecation")
+
+            encoding = "UTF-8"
+        }
+    }
 }
 
 val protobufVersion = "3.19.4"
