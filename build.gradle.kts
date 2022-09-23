@@ -2,9 +2,6 @@ import com.google.protobuf.gradle.*
 
 plugins {
   id("com.google.protobuf")
-  id("de.undercouch.download")
-  id("io.github.gradle-nexus.publish-plugin")
-  id("nebula.release")
 
   id("otel.java-conventions")
 }
