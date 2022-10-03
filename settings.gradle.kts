@@ -22,4 +22,5 @@ pluginManagement {
   }
 }
 
+include(":client")
 include(":proto")
